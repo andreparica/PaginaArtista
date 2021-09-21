@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mills</title>
+
+    <link
+      rel="shortcut icon"
+      href="Imagenes/logopestaña.jpeg"
+      type="logopestana"
+    />
+
+    <!--Source Sans Pro-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fjalla-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- CSS Interno (No recomendado)-->
+
+    <!--<style>
+
+        body {
+            background-color: #fcebeb;
+
+        }
+
+
+    </style> -->
+  </head>
+
+  <body>
+    <header>
+      <!-- Contenedor-->
+      <!-- Para CCS En línea (No recomendado)-->
+      <!--<div style="background-color: royalblue;">-->
+
+      <div class="logo">
+        <img width="500px" src="Imagenes/logo.png" alt="logo" />
+      </div>
+
+      <nav>
+        <ul class="barradenavegacion">
+          <li class="navegacion"><a href="#section2"> La Banda </a></li>
+          <li class="navegacion"><a href="#section1"> Música </a></li>
+          <li class="navegacion"><a href="#section3"> Videos </a></li>
+          <!-- <li class="navegacion"><a target=_blank href="segundapagina.html"> La Banda </a></li> Para relacionar con otra página dentro del sitio web-->
+        </ul>
+      </nav>
+    </header>
+
+    <!--Sección Parallax-->
+
+    <section>
+      <article>
+        <div class="parallax">
+          <div class="cajaparalax tituloparallax">
+            <h2>Gira Volver a Empezar</h2>
+            <!--Contenedor en Línea-->
+
+            <span class="parrafoparallax">
+              <a
+                target="_blank"
+                href="https://mitaquilla.com.co/verMas.php?idEvento=76"
+              >
+                ¡Boletas Disponibles Aquí!
+              </a>
+            </span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="section2">
+      <article>
+        <div class="informacion">
+          <p>
+            <span class="titulobanda">Sobre la Banda</span>
+            <!--Santo de linea, es etiqueta vacía, no necesitan contenido -->
+            <br />
+            <br />
+            <br />
+
+            The Mills es una banda colombiana de Rock formada en Bogotá con
+            cinco integrantes en el año 2007, por el vocalista Álvaro Charry, el
+            guitarrista Jorge Bello, el bajista Ramón Gutiérrez, el teclista
+            Diego Cáceres y el baterista Diego Cadavid.​ La banda se formó por
+            el vocalista Álvaro Charry y Jorge Luis Bello donde empezaron a
+            crear melodías y canciones con el tiempo de manera empírica logran
+            acoplar nuevos sonidos y tendencias.​ Durante ese periodo, se unió
+            Juan David Parra como baterista y sale de la banda Héctor Andrés
+            Muñoz Ramírez. Después de haber tocado con 3 bajistas diferentes se
+            integra César Barajas, David Castiblanco como vocalista segunda voz
+            y con su sonido la banda queda completa.2
+
+            <br />
+            <br />
+
+            <span class="titulobandados"> Rock Bogotano </span>
+
+            <br />
+            <br />
+
+            La banda se formó en el 2007. Ese mismo año se dieron a conocer con
+            su primer EP, Don't Care What They Think, Jorge Luis Bello ,
+            guitarrista de la banda The Hall Effect.2​ Con ese trabajo lograron
+            un reconocimiento positivo de la crítica, destacándose la edición
+            andina de Rolling Stone, la cual publicó un artículo de Daniel
+            Casas, por entonces director de Rock al Parque, en el que elogiaba
+            las influencias británicas y el sonido de la banda.1​ En el 2008, el
+            grupo publicó los sencillos "Before I Go to Sleep" y "Let it Go", a
+            la vez que fueron escogidos para el evento de "Colombia Fest".
+          </p>
+
+          <img src="Imagenes/fotoseccion.jpg" alt="fotoseccion" />
+        </div>
+      </article>
+    </section>
+
+
+
+    <section id=section1 class="contentmusic">
+      <h2>Música</h2>
+      <div class="container">
+        <div class="card">
+          <img src="Imagenes/portada1.jfif" alt="portadauno" />
+          <h4>Babel</h4>
+          <p>2007</p>
+          <a onclick="album1()" href="#"> Escuchar Más </a>
+
+        </div>
+
+        <!--Primera Carte-->
+
+        <div class="card">
+          <img src="Imagenes/portada3.jpg" alt="portadados" />
+          <h4>Babel Special Edition</h4>
+          <p>2009</p>
+          <a onclick="album2()" href="#"> Escuchar Más </a>
+        </div>
+
+        <!--Segunda Carte-->
+
+        <div class="card">
+          <img src="Imagenes/portada2.jpg" alt="portadatres" />
+          <h4>Señora</h4>
+          <p>2020</p>
+          <a onclick="album3()" href="#"> Escuchar Más </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <img src="Imagenes/portada4.jfif" alt="portadacuatro" />
+          <h4>Volver a Empezar</h4>
+          <p>2020</p>
+          <a onclick="album4()" href="#"> Escuchar Más </a>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/portada5.jpg" alt="portadacinco" />
+          <h4>10 Años</h4>
+          <p>2020</p>
+          <a onclick="album5()" href="#"> Escuchar Más </a>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/portada6.jpg" alt="portadaseis" />
+          <h4>Olvidarte</h4>
+          <p>2021</p>
+          <a onclick="album6()" href="#"> Escuchar Más </a>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section id= section3> 
+      <div class="videos">
+        <div class="imagensection">
+          <img src="Imagenes/logovideo.jpeg" alt="logovideo" />
+        </div>
+
+        <div class="iframeprincipal">
+          <!--<video controls src=""></video> -->
+          <!--Permite colocar un elemento HTML dentro de otro objeto HTML principal-->
+
+         <!-- <iframe
+            width="600px"
+            height="350px"
+            src="https://www.youtube.com/embed/ZMbMg4iYKkc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+        autoplay; clipboard-write; 
+        encrypted-media; gyroscope; 
+        picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="iframes">
+          <iframe
+            width="600px"
+            height="350px"
+            src="https://www.youtube.com/embed/suCuDhNGtlY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <iframe
+            width="600px"
+            height="350px"
+            src="https://www.youtube.com/embed/v3SDGLhUh9E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div> -->
+
+
+      </div>
+
+      </section>
+
+      <footer>
+
+        <div class="final">
+
+          <p> Corporación Marmaz Management & Booking </p>
+
+        </div>
+
+
+      </footer>
+
+
+      <script src="Javascript/java.js"></script>
+  </body>
+</html>
+
+
+

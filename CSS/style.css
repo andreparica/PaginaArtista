@@ -1,0 +1,310 @@
+body {
+  background-color: black;
+  /*Top, Right, Bottom, Left. Sentido de la aguja del reloj*/
+  margin: 40px 200px 0px 200px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Encabezado*/
+.logo {
+  /*Contenedor de título principal*/
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+/*Selector de etiqueta*/
+nav {
+  background-color: black;
+  padding: 20px 0px 20px 0px;
+  /*Esta propiedad sirve para alinear textos izq, der, justificado, center*/
+  text-align: center;
+}
+
+.barradenavegacion {
+    /*Propiedad para quitar los elementos en bloque y ponerlos en línea*/
+  display: inline-flex;
+  /*Quitar viñetas de la lista*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion {
+    /*Los elementos se separan con este padding*/
+    padding: 10px 60px 10px 60px;
+}
+
+/*Selector de Pseudo Clases*/
+.navegacion:hover {
+    background-color: #dc143c;
+}
+
+/*Selector Descendiente, llamamos hipervínculos*/
+.navegacion a{
+/* Quitar color del hipervínculo*/
+    text-decoration: none;
+    /*Colocar color al texto*/
+    color: #ffffff;
+    /*Aumento del tamaño*/
+    font-weight: 800;
+
+
+}
+
+/*Parte1 - Parallax */
+
+.parallax { /*Contenedor*/
+background-image: url(../Imagenes/fotoportadados.jpg);
+min-height: 700px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+
+/*Fondo Estatico*/
+background-attachment: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+/*.cajaparallax {
+margin: 0 auto
+
+*/
+
+div.tituloparallax h2 {
+ /*Font size: tamaño al texto */
+  font-size: 65px; /* 75 px en promedio*/
+  color: crimson;
+  /*Grosor de la letra */
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: black; opacity: 0.7;
+
+
+}
+
+.parrafoparallax {
+border: 2px solid white;
+display: flex;
+justify-content: center;
+
+
+}
+
+.parrafoparallax:hover {
+
+  background-color: crimson;
+  opacity: 0.7;
+
+}
+
+.parrafoparallax a{
+
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  padding: 10px 30px;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+          
+}
+
+/*Sección 3 - Info*/
+
+.informacion { /*Sobre la Banda*/
+
+  display: inline-flex;
+  margin: 100px 0px;
+}
+
+.informacion p{
+
+color: white;
+/*Coloca el máximo de ancho a un elemento, impide que el valor de width sea más largo que el valor espeficidado*/
+max-width: 50%;
+/* Propiedad flexible - los alinea al centro - la alineación de un elemento dentro del contenedor*/
+align-self: center;
+padding-left: 58px ;
+/*establecer la altura entre líneas de párrafos*/
+line-height: 23px;
+
+}
+
+.titulobanda { /*Titulo Sobre la Banda*/
+
+  font-size: 50px;
+  font-weight: 300;
+  color: crimson;
+  font-family: 'Fjalla One', sans-serif;
+
+
+}
+
+.titulobandados {
+
+  font-size: 20px;
+  font-weight: 300;
+  color: crimson;
+
+}
+
+.informacion img { /*Bio Imagen Foto Seccion*/ 
+max-width: 40%;
+/* El navegador calculará y seleccionará la altura para el elemento especificado */
+height: auto;
+padding: 0px 50px;
+
+/*padding: 0px 50px 0px 50px*/
+
+}
+
+
+.contentmusic {
+
+  font-family: Arial, Helvetica, sans-serif;
+  /* espaciado entre letras del texto) */
+  letter-spacing: 5px;
+  line-height: 2px;
+
+}
+
+
+.contentmusic h2 {
+ /*para dar separación y que no se una con el contenido*/
+  margin: 50px 0px;
+  font-size: 1.5cm;
+  color: crimson;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+.container {
+
+width: 100%;
+height: 500px;
+display: flex;
+justify-content: center;
+margin: auto;
+
+}
+
+.container .card {
+
+width: 400px;
+height: 400px;
+border-radius: 8px;
+box-shadow: 0 2px 2px rgba(0,0, 0, 0.2);
+/*Cuando se desborda el contenido, él lo oculta)*/
+overflow:hidden;
+margin: 0 10px;
+text-align: center;
+/*Para que cada caja tenga hover - animación*/
+transition: all 0.25s;
+
+}
+
+.container .card:hover{
+/* Mi elemento se traslade en Y -15 px hacia arriba*/
+  transform: translateY(-15px);
+  box-shadow:0 12px 16px rgb(0, 0. 0, 0.2);
+
+
+}
+
+
+.container .card img {
+
+  width: 250px; 
+  height: 300px;
+
+}
+
+.container .card h4 {
+
+font-weight: 600;
+color: white;
+
+}
+
+.container .card p {
+/* Root em basado en la raíz - 16 ´x*/
+padding: 0 1rem;
+font-size: 16px;
+font-weight: 300;
+color: white;
+
+}
+
+.container .card a{
+
+  font-weight: 500;
+  text-decoration: none;
+  color:crimson
+
+
+}
+
+/*Seccion 4 - Videos */
+.videos { /*Contenedor*/
+  /*Acomodar los elementos a los lado*/
+  margin: 50px 0px 0px 0px;
+}
+
+.imagensection {
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+
+}
+
+.imagensection img {
+  width: auto;
+  height: 100px;
+
+
+}
+
+.iframeprincipal {
+  display: flex;
+  justify-content: center;
+}
+
+.iframes {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.iframes iframe{
+  margin-top: 40px;
+  padding: 20px;
+
+
+}
+
+.final {
+margin-top: 100px;
+background-color: crimson;
+min-height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.final p {
+text-align: center;
+font-weight: 400;
+color: white;
+background-color: black;
+
+
+}
+
